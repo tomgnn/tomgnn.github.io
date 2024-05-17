@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYQNRK8LHK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FYQNRK8LHK');
+    </script>
+
+    <meta charset="utf-8" />
+    <title>TopoMetric Graph Neural Network: Topological and Geometric Representations of Dynamic Point Clouds</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script
+        type="text/javascript">WebFont.load({ google: { families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Changa One:400,400italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500", "Bungee Outline:regular"] } });</script>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link href="data/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="title-row">
+                <h1 class="title">TOM GNN</h1>
+                <h1 class="subheader">TopoMetric Graph Neural Network: Topological and Geometric Representations of Dynamic Point Clouds</h1>
+            </div>
+            
+            <div class="title-row">
+                <h2 class="subheader">NeurIPS 2024 (under review)</h1>
+            </div>
+            <div class="link-labels base-row">
+                <!-- TODO: Update arxiv link -->
+                <div class="base-col icon-col"><a href="" target="_blank"
+                        class="link-block"><img
+                            src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01.png"
+                            alt="paper"
+                            sizes="(max-width: 479px) 12vw, (max-width: 767px) 7vw, (max-width: 991px) 41.8515625px, 56.6953125px"
+                            srcset="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01-p-500.png 500w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01.png 672w"
+                            class="icon-img" /></a></div>
+                <!-- TODO: Update code link -->
+                <div class="base-col icon-col"><a href="" class="link-block"><img
+                            src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cae3b53b42ebb3dd4175a82_68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67.png"
+                            alt="paper" style="height: 60" class="icon-img github-img-icon" /></a></div>
+            </div>
+            <div class="link-labels base-row">
+                <div class="base-col icon-col">
+                    <strong class="link-labels-text">Paper</strong>
+                </div>
+                <div class="base-col icon-col">
+                    <strong class="link-labels-text">Code (Coming soon)</strong>
+                </div>
+            </div>
+
+            
+            <div class="base-row add-top-padding">
+                <h1 id="abstract">Overview</h1>
+                <p class="paragraph">
+                    3D perception of dynamic deformable objects is a fundamental problem that has broad applications in industrial, 
+                    household, and surgical settings. Deformable objects can take an infinite variety of configurations that make it 
+                    difficult to perceive their semantically meaningful parts. While geometric deep learning techniques that model 
+                    local structures have shown success for rigid point cloud processing, they fall short for highly deformable 
+                    objects. These deformable objects experience continuous transformations to their local geometric structure, 
+                    particularly the immediate spatial relationships between features such as corners, edges, and planes. 
+                    <i>Topological data analysis</i> (TDA) can model the global connectivity structure of an object, which 
+                    remains stable under deformations. We propose to improve 3D perception of deformable objects by fusing 
+                    topological and geometric information. We leverage the Mapper algorithm, a 
+                    tool from TDA for modeling global connectivity by representing the topological structure of data as a 
+                    graph. We extend the Mapper algorithm to operate on time-varying deformations with the 
+                    <i>Sequential Mapper</i> algorithm. We also propose the <i>TopoMetric Graph Neural Network</i> (TOM GNN) for learning 
+                    topological and geometric features to perform common point cloud processing tasks, including semantic 
+                    part segmentation and classification. We benchmark this technique for 3D semantic part segmentation on 
+                    our novel dataset called <i>FabricDeform3D</i>, which includes 75,000 labelled point clouds with 65 semantic 
+                    part labels across 15 highly deformable object classes of garments, bags, and backpacks. Compared to 
+                    well-known point cloud processing backbones, TOM GNN outperforms the strongest baseline by 1.9% with 
+                    the mean IoU metric on FabricDeform3D. TOM GNN also generalizes to standard benchmarks with rigid point 
+                    clouds like ShapeNet-Part and ModelNet40.
+                </p>
+            </div>
+            
