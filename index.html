@@ -52,13 +52,13 @@
                             srcset="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01-p-500.png 500w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01.png 672w"
                             class="icon-img" /></a></div>
                 <!-- TODO: Update code link -->
-                <div class="base-col icon-col"><a href="" class="link-block"><img
+                <div class="base-col icon-col"><a href="https://drive.google.com/file/d/1aDHX21QBrj2KVihCT7nnRuGYeyJAFyCr/view" class="link-block"><img
                             src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cae3b53b42ebb3dd4175a82_68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67.png"
                             alt="paper" style="height: 60" class="icon-img github-img-icon" /></a></div>
                             <!-- TODO: Update code link -->
                 <!-- TODO: Update data link -->
                 <div class="base-col icon-col"><a
-                    href=""
+                    href="https://drive.google.com/drive/folders/1EegIB3-s4BH7w7c0FOyJmtOX_itgD-Kx"
                     target="_blank" class="link-block"><img
                         src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5e7136849ee3b0a0c6a95151_database.svg"
                         alt="paper" style="height: 60" class="icon-img data-img-icon" /></a></div>
@@ -68,10 +68,10 @@
                     <strong class="link-labels-text">Paper</strong>
                 </div>
                 <div class="base-col icon-col">
-                    <strong class="link-labels-text">Code (Coming soon)</strong>
+                    <strong class="link-labels-text">Code</strong>
                 </div>
                 <div class="base-col icon-col">
-                    <strong class="link-labels-text">Data (Coming soon)</strong>
+                    <strong class="link-labels-text">Data</strong>
                 </div>
             </div>
 
@@ -79,25 +79,7 @@
             <div class="base-row add-top-padding">
                 <h1 id="abstract">Overview</h1>
                 <p class="paragraph">
-                    3D perception of dynamic deformable objects is a fundamental problem that has broad applications in industrial, 
-                    household, and surgical settings. Deformable objects can take an infinite variety of configurations that make it 
-                    difficult to perceive their semantically meaningful parts. While geometric deep learning techniques that model 
-                    local structures have shown success for rigid point cloud processing, they fall short for highly deformable 
-                    objects. These deformable objects experience continuous transformations to their local geometric structure, 
-                    particularly the immediate spatial relationships between features such as corners, edges, and planes. 
-                    <i>Topological data analysis</i> (TDA) can model the global connectivity structure of an object, which 
-                    remains stable under deformations. We propose to improve 3D perception of deformable objects by fusing 
-                    topological and geometric information. We leverage the Mapper algorithm, a 
-                    tool from TDA for modeling global connectivity by representing the topological structure of data as a 
-                    graph. We extend the Mapper algorithm to operate on time-varying deformations with the 
-                    <i>Sequential Mapper</i> algorithm. We also propose the <i>TopoMetric Graph Neural Network</i> (TOM GNN) for learning 
-                    topological and geometric features to perform common point cloud processing tasks, including semantic 
-                    part segmentation and classification. We benchmark this technique for 3D semantic part segmentation on 
-                    our novel dataset called <i>FabricDeform3D</i>, which includes 75,000 labelled point clouds with 65 semantic 
-                    part labels across 15 highly deformable object classes of garments, bags, and backpacks. Compared to 
-                    well-known point cloud processing backbones, TOM GNN outperforms the strongest baseline by 1.9% with 
-                    the mean IoU metric on FabricDeform3D. TOM GNN also generalizes to standard benchmarks with rigid point 
-                    clouds like ShapeNet-Part and ModelNet40.
+                    3D perception of dynamic, deformable objects is a fundamental problem that has broad applications in industrial, household, and surgical settings. Deformable objects can take an infinite variety of configurations that make it difficult to perceive their semantically meaningful parts. Geometric deep learning methods have proven effective in handling local geometric structures within rigid point clouds. However, they struggle when faced with highly deformable objects undergoing continuous spatial transformations that alter the Euclidean distances and angles between object parts. Topological data analysis (TDA) can model the global connectivity structure of an object, which remains stable even for highly deformable objects. Therefore, we propose to improve 3D perception of deformable objects by fusing topological and geometric information. We leverage the Mapper algorithm, a tool from TDA for modeling global connectivity by representing the topological structure of data as a graph. We extend the Mapper algorithm to operate on time-varying deformations with the Sequential Mapper algorithm. We then propose the TopoMetric Graph Neural Network (TOM GNN) for learning topological and geometric features to efficiently and accurately perform semantic part segmentation. We benchmark this technique for 3D semantic part segmentation on our novel dataset called FabricDeform3D, which includes 75,000 labelled point clouds with 65 semantic part labels across 15 highly deformable object classes of garments, bags, and backpacks. Compared to well-known point cloud processing backbones, TOM GNN outperforms the strongest baseline by 1.9% with the mean IoU metric on FabricDeform3D. TOM GNN also generalizes to static rigid point clouds on the standard benchmark ShapeNet-Part.
                 </p>
             </div>
             
