@@ -12,7 +12,7 @@
     </script>
 
     <meta charset="utf-8" />
-    <title>TopoMetric Graph Neural Network: Topological and Geometric Representations of Dynamic Point Clouds</title>
+    <title>Topological and Geometric Representations of Deformable Point Clouds</title>
 
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -35,12 +35,12 @@
     <div class="section">
         <div class="container">
             <div class="title-row">
-                <h1 class="title">TOM GNN</h1>
-                <h1 class="subheader">TopoMetric Graph Neural Network: Topological and Geometric Representations of Dynamic Point Clouds</h1>
+                <h1 class="title">Topological and Geometric Representations of Deformable Point Clouds</h1>
+<!--                 <h1 class="subheader">TopoMetric Graph Neural Network: Topological and Geometric Representations of Dynamic Point Clouds</h1> -->
             </div>
             
             <div class="title-row">
-                <h2 class="subheader">NeurIPS 2024 (under review)</h1>
+                <h2 class="subheader">NeurIPS 2025 (under review)</h1>
             </div>
             <div class="link-labels base-row">
                 <!-- TODO: Update arxiv link -->
@@ -79,7 +79,7 @@
             <div class="base-row add-top-padding">
                 <h1 id="abstract">Overview</h1>
                 <p class="paragraph">
-                    3D perception of dynamic, deformable objects is a fundamental problem that has broad applications in industrial, household, and surgical settings. Deformable objects can take an infinite variety of configurations that make it difficult to perceive their semantically meaningful parts. Geometric deep learning methods have proven effective in handling local geometric structures within rigid point clouds. However, they struggle when faced with highly deformable objects undergoing continuous spatial transformations that alter the Euclidean distances and angles between object parts. Topological data analysis (TDA) can model the global connectivity structure of an object, which remains stable even for highly deformable objects. Therefore, we propose to improve 3D perception of deformable objects by fusing topological and geometric information. We leverage the Mapper algorithm, a tool from TDA for modeling global connectivity by representing the topological structure of data as a graph. We extend the Mapper algorithm to operate on time-varying deformations with the Sequential Mapper algorithm. We then propose the TopoMetric Graph Neural Network (TOM GNN) for learning topological and geometric features to efficiently and accurately perform semantic part segmentation. We benchmark this technique for 3D semantic part segmentation on our novel dataset called FabricDeform3D, which includes 75,000 labelled point clouds with 65 semantic part labels across 15 highly deformable object classes of garments, bags, and backpacks. Compared to well-known point cloud processing backbones, TOM GNN outperforms the strongest baseline by 1.9% with the mean IoU metric on FabricDeform3D. TOM GNN also generalizes to static rigid point clouds on the standard benchmark ShapeNet-Part.
+                    3D perception of deformable objects is critical for industrial, household, and healthcare applications, yet progress has been hindered by the lack of suitable datasets. To address this, we introduce FabricDeform3D (FD3D), a dataset of 37,500 annotated point clouds and corresponding meshes across 15 classes of highly deformable objects, such as clothing and bags, with 65 semantic part labels. While geometric deep learning methods have excelled on rigid point clouds by exploiting local geometric structure, they struggle with deformable objects undergoing continuous, non-rigid transformations. Therefore, we also introduce TopoMetric Graph Neural Network (TOM GNN), a novel approach inspired by topological data analysis. TOM GNN computes geometric features from topological structures, enabling it to capture global connectivity patterns that remain invariant to deformations. This work focuses on semantic part segmentation because of its importance in tasks like robotic laundry folding and automated grocery bagging, and its well-established foundation in rigid object research that enables robust benchmarking. On FD3D, TOM GNN outperforms the strongest baseline by 2.1% mean IoU, establishing a new state-of-the-art.
                 </p>
             </div>
             
